@@ -9,3 +9,30 @@
 @import "contact.scss";
 @import "footer.scss";
 @import "bootstrap-overrides.scss";
+
+.steps {
+  margin: 2em 0;
+  text-align: center;
+
+}
+
+.steps h2{
+  margin: 1em 0;
+}
+
+.integrations {
+  margin: 2em 0;
+  text-align: center;
+
+}
+
+.integrations h2{
+  margin: 1em 0;
+}
+
+.integrations img.rounded-circle {
+  margin: 1em 0;
+  width: 100px;
+  height: 100px;
+
+}
