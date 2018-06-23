@@ -372,6 +372,70 @@ section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
 
+
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+ 
+.clearfix {  
+    *zoom: 1;  
+}
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*    Services    */
+.services ul{
+  margin-top: 100px;
+}
+
+.services ul li{
+  list-style: none;
+  display: block;
+  width: 313px;
+  float: left;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.services ul li:first-child{
+  margin-left: 0;
+}
+
+.services ul li .separator{
+  display: block;
+  width: 1px;
+  height: 20px;
+  background: #f6f6f6;
+  margin: 20px auto;
+}
+
+.services ul li h2{
+  color: #616161;
+  font-family: "raleway-bold";
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.services ul li p{
+ color: #838181;
+  font-family: "raleway-regular";
+  font-size: 14px;
+  line-height: 28px; 
+  margin-top: 40px;
+  letter-spacing: .5px;
+}
+
+
+
 footer {
   padding: 25px 0;
   text-align: center;
