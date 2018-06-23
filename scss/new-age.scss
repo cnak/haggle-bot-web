@@ -9,15 +9,14 @@
 @import "contact.scss";
 @import "footer.scss";
 @import "bootstrap-overrides.scss";
-
 .speech-bubble-container {
   position: absolute;
-  right:-200px;
-  top:-180px;
+  right: -200px;
+  top: -180px;
 }
 
 .circular-sb {
-  width: 250px;
+  width: 280px;
   border: 5px solid #00bfb6;
   padding: 80px 0px;
   margin: 30px auto;
@@ -28,7 +27,46 @@
   font-family: arial;
   position: relative;
   color: #85cced;
-  animation: fadein 2s ease-in;
+}
+
+.circular-sb p {
+  overflow: hidden;
+  width: 15em;
+  height: 4em;
+  animation: type 4s steps(60, end);
+  margin: 10px 0 0 10px;
+
+}
+
+.circular-sb p:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+
+.circular-sb p a{
+  color: lime;
+  text-decoration: none;
+}
+
+.circular-sb span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
 }
 
 @keyframes fadein {
@@ -39,8 +77,6 @@
     opacity: 1;
   }
 }
-
-
 
 /*right circle shape speech bubble*/
 
@@ -75,7 +111,6 @@
   bottom: 5px;
 }
 
-
 /*left circle shape speech bubble*/
 
 .circle3 {
@@ -108,7 +143,6 @@
   left: -60px;
   bottom: 5px;
 }
-
 
 header.masthead {
   // background: linear-gradient(-45deg, #7b4397, #dc2430, #23A6D5, #23D5AB);
